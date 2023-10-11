@@ -4,32 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Berners Lee</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/90f23d29c2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <ul class="navbar">
+      <section class="navbar">
         <div class="logo">
-          <li><a href=""><img src="images/Logo_complet.webp" alt="Logo Britannica" /></a></li>
+          <a href="#home" class="active"><img src="images/Logo_complet.webp" width="130px" alt="logo Britannica"></a>
         </div>
-        <div class="hamburger">
-          <li><a href="default.asp"><i class="fa-solid fa-bars" style="color: #ffffff;"></i> Browse</a></li>
-          <li><a href="news.asp"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> Search</a></li>
-          <li><a href="contact.asp">Dictionary</a></li>
-          <li><a href="about.asp">Quizzes</a></li>
-          <li><a href="about.asp">Money</a></li>
-        </div>
-        <div class="login">
-          <li><a href=""><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i> Login</a></li>
-        </div>
-        <div class="abonnement">
-          <li><a href="">Subscribe</a></li>
-        </div>
-      </ul>
+        <div class="topnav" id="myTopnav">
+          <a href="#news"><i class="fa-solid fa-bars"></i> Browse</a>
+          <a href="#contact"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> Search</a>
+          <a href="#dictionary">Dictionary</a>
+          <a href="#quizzes">Quizzes</a>
+          <a href="#money">Money</a>
+          <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa-solid fa-bars iconhamb"></i>
+          </a>
+          <a href="" class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div> 
+         <div class="login">
+           <a id="subscribe" href="#news">Subscribe</a>
+           <a id= login2 href="#news"><em id="login">Login </em><i class="iconlogin fa-solid fa-circle-user" style="color: #ffffff;"></i><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></a>
+         </div>
+      </section>
+      <section class="path">
+        <a href="">Home </a><em> > </em><a href="">Science</a><em> > </em><a href="">Mathematics</a>
+      </section>  
+      <script>
+        function hamburger() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          }
+      </script>
     </header>
     <main>
+      <section>
+      <h1>Tim Berners-Lee</h1>
+      <h3>British scientist</h3>
+      <h5>Also known as : Sir Tim Berners-Lee</h5>
+      <p>Written by Michael Aaron Dennis</p>
+      <p>Fact-checked by The Editors of Encyclopaedia Britannica</p>
+      <p>Last Updated: Article History</p>
 
+      </section>
     </main>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>

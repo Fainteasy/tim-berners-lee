@@ -1,37 +1,120 @@
-header {
-  background-color: #03182E;
+
+body {
+  font-family: 'Georgia', sans-serif;
+  font-weight: 400;
 }
-.navbar a {
-  color:white;
+.topnav {
+  background-color: #061D2E;
+  overflow: hidden;
+  padding:10px;
+}
+
+.topnav a, .login a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
   text-decoration: none;
-  padding-right: 40px;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#subscribe  {
+  background-color: #973100;
+  border-radius: 10px;
+  border : 1px solid black;
+}
+
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+#login {
+  display: none;
 }
 .navbar {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr;
-  padding: 20px;
-  position: sticky;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  align-items: center;
+  background-color: #061D2E;
 }
-
 .logo {
-  grid-column: 1;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
 }
-.hamburger {
-  grid-column: 2/7;
-  display: flex;
+.topnav {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
 }
 .login {
-  grid-column: 7;
-  text-align: end;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: right;
+  display:flex;
+  flex-direction: row-reverse;
 }
-.abonnement {
-  grid-column: 8;
-  text-align: end;
+#login2 {
+  padding-left: 20px;
 }
-html {
-  font-family: 'Georgia', sans-serif;
+
+
+
+@media only screen and (min-width:900px) {
+.topnav a {
+  display: block;
+  padding: 13px;
 }
-.navbar img {
-  width:130px
+.topnav a.icon {
+  display: none;
+}
+.logo {
+  padding-left: 15px;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 200px auto auto;
+  grid-template-rows: auto;
+}
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+}
+.topnav {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: left;
+}
+.login {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: right;
+}
+#login {
+  display: inline;
+  font-style: normal;
+}
+.iconlogin {
+  display: none;
+}
+
 }
