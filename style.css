@@ -75,8 +75,58 @@ body {
 #login2 {
   padding-left: 20px;
 }
-
-
+.title a {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+#history {
+  border: none;
+}
+#action2 {
+  font-style: normal;
+}
+.fonctions a {
+  display: none;
+  padding: 10px;
+  color: #0140ac;
+  border:1px solid gray;
+  border-radius: 5px;
+  font-weight: bolder;
+  box-shadow: 2px 2px 5px rgb(182, 182, 182);
+}
+.fonctions a.icon {
+  float: right;
+  display: block;
+  margin-right:100px ;
+}
+.fonctions.responsive2 {
+  position: relative;
+}
+.fonctions.responsive2 a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.fonctions.responsive2 a {
+  float: none;
+  display: inline;
+  text-align: right;
+}
+.table-of-content {
+  text-align: center;
+  width: 300px;
+  border:1px solid gray;
+  border-radius: 5px;
+  font-weight: bolder;
+  box-shadow: 2px 2px 5px rgb(182, 182, 182);
+}
+.table-of-content p {
+  text-align: center;
+}
+.table-of-content a{
+  text-decoration: none;
+  color: #0140ac;
+}
 
 @media only screen and (min-width:900px) {
 .topnav a {
@@ -116,5 +166,12 @@ body {
 .iconlogin {
   display: none;
 }
-
+.fonctions a {
+  display: inline;
+  padding: 13px;
+  border: none;
+}
+.fonctions a.icon {
+  display: none;
+}
 }

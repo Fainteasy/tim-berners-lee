@@ -46,15 +46,53 @@
       </script>
     </header>
     <main>
-      <section>
-      <h1>Tim Berners-Lee</h1>
-      <h3>British scientist</h3>
-      <h5>Also known as : Sir Tim Berners-Lee</h5>
-      <p>Written by Michael Aaron Dennis</p>
-      <p>Fact-checked by The Editors of Encyclopaedia Britannica</p>
-      <p>Last Updated: Article History</p>
-
+      <section class="presentation">
+        <article class="title">
+          <h1>Tim Berners-Lee</h1>
+          <h3>British scientist</h3>
+          <div class="fonctions" id="fonctions">
+            <a href="#news"><i class="fa-solid fa-print" style="color: #0140ac;"></i> Print</a>
+            <a href="#contact"><i class="fa-solid fa-circle-check" style="color: #0140ac;"></i> Cite</a>
+            <a href="#dictionary"><i class="fa-solid fa-share-nodes" style="color: #0140ac;"></i> Share</a>
+            <a href="#quizzes"><i class="fa-solid fa-message" style="color: #0140ac;"></i> Feedback</a>
+            <a href="#money"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="actions()">
+              <i class="fa-solid fa-ellipsis-vertical"></i><em id="action2"> Actions</em>
+            </a>
+          </div> 
+          <h5>Also known as : Sir Tim Berners-Lee</h5>
+          <p>Written by <a href="">Michael Aaron Dennis</a></br>
+            Fact-checked by <a href="">The Editors of Encyclopaedia Britannica</a></br>
+            Last Updated: <a id="history" href="">Article History</a>
+          </p>
+        </article>
+        <article class="table-of-content">
+          <p><a href=""><i class="fa-solid fa-bars-staggered"></i> Table of Contents</a></p>
+          <p><a href=""><i class="fa-regular fa-circle-play" style="color: #5d6065;"></i>Listen to article <em class="timealoud"> 3 minutes</em> <i class="fa-brands fa-soundcloud" style="color: #4a4a4a;"></i></a></p>
+        </article>
+        <article class="resume">
+          <img src="images/British-scientist-Tim-Berners-Lee.webp" alt="Tim Berners Lee" style="max-width: 300px;"></br>
+          <a href="" class="media">See all media</a></br>
+          <p>Category: Science & Tech</p>
+          <p>In Full: Sir Tim Berners-Lee</p>
+          <p>Born: June 8, 1955, London, England (age 68)</p>
+          <p>Founder: World Wide Web Consortium</p>
+          <p>Inventions: World Wide Web World Wide Web</p>
+          <a href="" class="related-content">See all related content →</a>
+          <p>Tim Berners-Lee, in full Sir Tim Berners-Lee, (born June 8, 1955, London, England), British computer scientist, generally credited as the inventor of the World Wide Web. In 2004 he was awarded a knighthood by Queen Elizabeth II of the United Kingdom and the inaugural Millennium Technology Prize (€1 million) by the Finnish Technology Award Foundation.</p>
+          <p>Computing came naturally to Berners-Lee, as both of his parents worked on the Ferranti Mark I, the first commercial computer. (See computer: The first stored-program machines.) After graduating in 1976 from the University of Oxford, Berners-Lee designed computer software for two years at Plessey Telecommunications Ltd., located in Poole, Dorset, England. Following this, he had several positions in the computer industry, including a stint from June to December 1980 as a software engineering consultant at CERN, the European particle physics laboratory in Geneva.</p>
+        </article>
       </section>
+      <script>
+        function actions() {
+          var x = document.getElementById("fonctions");
+          if (x.className === "fonctions") {
+            x.className += " responsive2";
+          } else {
+            x.className = "fonctions";
+          }
+          }
+      </script>
     </main>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
