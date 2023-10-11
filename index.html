@@ -4,34 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Berners Lee</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    
     <script src="https://kit.fontawesome.com/90f23d29c2.js" crossorigin="anonymous"></script>
-    <script type="module" crossorigin src="./assets/index-d1d1ec52.js"></script>
-    <link rel="stylesheet" href="./assets/index-a7bc20fa.css">
+    <script type="module" crossorigin src="./assets/index-ab13021f.js"></script>
+    <link rel="stylesheet" href="./assets/index-df1419de.css">
   </head>
   <body>
     <header>
-      <ul class="navbar">
+      <section class="navbar">
         <div class="logo">
-          <li><a href=""><img src="data:image/webp;base64,UklGRrgNAABXRUJQVlA4WAoAAAAQAAAAaAEANgAAQUxQSE0GAAAB8KJte99m2/btMxAsFS0TLTuGoCFoCIKF4tef20MQvphmoCFoBgk8mVjpDqzjcOrEvQsjYgIA+L/65HnvLePXNk2effhfmk8+4fS/Mp5P2X5l6nPw/Tfmz5N8/sbwSeshJ9/of3naIeH39i25X7J9k18iX9o4MPrSQvZwmrfPkt3PIZYSfhT7UKdFsJY6NTKd5POL5Nd2QETkmt4HSY73HwYQHgGEYWA6xcb1ZgokeUnvX1z+eftpoD0E7m6Y/gTv1D8s+bIa1fbjKI+BGFhP8JfhL0u7qjca3c8IwzBPUA3V4HhVwfL2Q9oMlO/7y/CXIV3Wm8X9kPKpxPBhuF0WhtbwQ5JToSp/Qc+8rvC1+vP2fwnq7usv6G5eGOS+G+/4gfkz4O2zZAfj4JUBsZSA13gN2TBwftd4cS/0GrohnS8MfkPIpfRaSvKncO4M/lRBJEfxD3IiMYn46/HU71h62ZdSSl5IG2SThXt7DxJjzp8O8JWHuyZt0nirckhEcilu4XPnfmRncyJSSnGLsA3uWzK5Nx8+JKb8GQ/43KnOGg7FeqM6W/bXUrUZFkIrgNC5TgD+o/EDED4s3rjsY0GyOy3dqAsAX2mcSdlu1AWAdBpvQfugsZl85cEeLC7feLS6C0lU7wEPkUldjoVHucp9CwBcWXE4pdCWJu1l1WkrPJi+KU/u71lE6o5MWhgkOTfxTuqKw11Gptoc1i6bAq0N+Oi2fdGgu8F9xzqu2BW5mzYelkWeFtd4dPqVK1/af4bKZcZyW1BWiUuPZVpxXETsXA+BNRnCJO9dIQB3O0HjWkFdMa7ghqGSHFsp1XBbINy1OEj2UkrXWFdA1po2uMxYt9VtIVyHFcqK+bVlEUmlTa6r4GDXJmdGMyF9n6cqSlCqAtFuZAvYh6kwLVC0SRaPfdLoFfw5VLkcUG8rxl1XsuKU8drsVXA8ahwB6La37xOtKFCmBo0zQRWtrYLGe4CatazVI5nrpHiqZUe1Kegr+svgrW9yxGvDwTJ2mE/QV/Ra1yKMTZkraDPAOJWufR5wc3WHKlqzda0o6aWNXkoptc/dflZvguYAoChp8efb3FTiMTm2wZoUHkqwbsrQ8oHK9aZFre7uSjtWXppAjXVFsvpHYNkXFSdBXjWcQEyiyRExJYUPclOJmmh5FxU5Vq8BCEPhzA+DbL0lnAbS5+wJZ8Mp5JsyVRjHarod0iTZBcfaVQBVIevD7Gc47G9X0ZS7xdXdPUD1AvOmlOtA11hfUGrUXx7VbgG8ZMGDY+cFeQPltbjUJq2vLjzo4bFOGq8E1XB7IS417me9X4Ro27e5WCdJzvsVRQPjq4iNyxaBfhHxLLFyWSPKFTlLfQlum1xWD1xHOYWvk/u5eeCaYBmvIE4uR8ByXETS+uPcxnV12F8dX0DiejiseRHyfW5wnbD+8UWu7w5XNR/lBtcZ6nZx8/mmknA1TqN/UOF6QO9XFCz96RJVdznoWn6Mm0q6tmypT9eUgesp2nhMpBqubVjk6brSL8hrlEMOQNFwaULjHU83lXFBqFo/Emc0uUsbFnkiWQ2FTgvX4TVmm5tksIhh2OaT1EdthmSrNBacL2p51bRNkanFY+nVYNMYLW6QDZamVdrGk+QHuWm4OYNrNFasRQuP+FLiymszAAFIGvPOFxq7dlNuzhKPOK2ZtmNF6SsMjUWLN3I6IGhMC9+p33b5Sfxj/KB1Zr/wZdKYoG7acMc81bJCVzhb74CbGm+9D5KlKGzidkL9FrQwjySN3WmJelL+U6Zb+bvGuUWRWG4kZwCAu8ZeUmnkLAqrAzCeouCwK6XfeHj23ieNszispdHaknjLWxzaV3xbhKmQ7ACiYZ3gNJIeLk0DWQMAFyuNIwCINwNn8QB86jTO5AHEjXr9WMB1zXoP2IthPTzuCjkiwjMMHBd+/8gOqvC45T/a0w5pHkCaph4AJEMBCg92AIUHBcKDBUDnUeCD9rEAyjy0OazTgeqAaJgOeG9nm3/hdH1LHtbzIXSl+x1C11rEMvbFzLgAuG2aWoBR7oYWsE/31T1g70vr560JD3XyjXigk+OWd7G/rYBQam8lQPe5lJLFweillOQAwMvBAMDLQQcnBz2AIEcBJ/YPDYBsvZP3XpPDwVh7731LDnosvffsAABWUDggRAcAAHAnAJ0BKmkBNwAAAAAlpbt02UJ2ZKkbDk90tvuZ9EbqAeYDzh/EA9uDqFt5i/GbLnfAH8Y/Br9OfIP+efgp+wHmH+IfkX4ZfsL/ZNET9OPi/4e/rz/dOFJ/DP3EP4X/C/wz/ZL/C7YB5LPxb+SfjB/Pf99/qPQA5Dn8V/iH4i+gB3AP5n+IH0Afxz+Ify78SP8l7uP4t+P39o9qHxF/LfyA+gT+J/xf+O/jD/Wf9j9HPqr/TP2Kv0e/lqYT7n+hiEJQ1X+yxhBCg4Tt9xFm1BUfVqkvO2JV3BffdTfobOeOOsnzkLOCPZ8XkXBiLrqVnir4PXeW40ZMg+i3FA6kLf5zUl0RSjOo6opT7i2iIDnS2NndhTBko4hVdPMpwwlq2mWymnFqkmnOjWYya6PB7DAtimFp8ytRpQtd2IhOTsV9yDhUAAD+/97dmNkC0m50niPw4gHYQ8NJIwTDgXMRArMfYxoP88tMBi9JAuPXD6waH8uLZ9hej7gqaQaqPnGCMyRUcBK7FzemtPmhq0HUXZTq95TOk0iv1yPr9zHVeXdEsSFTA/x6Gh9cAIwolVEK7R4LwCmEPN+J7rLdY4z/9O2dtbnpCh9///pbJA1+B2ya8edRhHcfEf5Djx8grmueOwO9A7a6+yYQg/86WaAGemDremSxv5O5G0mxIJrrr1D/40I5H2oq0tGiiJ6i5DG/+AR//94bCepGwwYnXjKmJQPY+kvprgbHs1QOq0t6Yp3X+DCZ0Hcfxb+Ot9m1eZXVj0tVtUeYP7Ik3E/lf8B8Xh89MGiXq5MDyzdJNXNUCKou2oIg5uEgek85cvp747pvAgB6WC9D7/Xohnw3vQ5DD0MlcSeWr3DL15j///75iX8UaT8shj/++DO9/w4drbqB///984rHR/6TYDj39xTRGJz6s7T3/ywjv9T4qCtWib2betp7cav+HfUZ10gb8Krutir/AHTwFmaQ4c0MAkBGQo0AWFnFzbiLAT+2KIrmWSUJ5y5kWsFN8SztdQJt/+1IxD/Ef0CcZPAxLz/7lzKP77t3Sn/lBn//sgePku+aNAYpuupTakFjVrzDR/EGaWMn2L2qGeRMo/3nHxCheqx89w3E7tNZS3MUdqGasosvGSHk2wppULqNu/FRJAOFGqwyaEXaL3Mio4eVcKOCij0hf4KdOGbkr/d5WjZGYmPIAhiojHuHVlzZM6YUdxF9kGIy0vduyqbCH/ozBzSm330U7gTtTrJ9WLKBPeVS2CUdQ9GQ9aiS4gmvdBrejIfwWbdrlUFoG7rIqSGkBk8eG+INurCqtsUkHVRwTehGmG/alj1hT3jLMj5CPd8d1zOYyWgUlXP6/Odq42FGXL2CxgUprf//JvXP1+qfN9SOqdBjMziREMsPgE9ZfA72EPSV4F+4/p9smIljn63EbzptClTYBBa8xVGPzDPDVM3sOJkR2cpkf6pcfCcY2e91Jgb4U9oYaImoGWOjcNGYVGidsW2R0kpDyFHOfVGHjX35nl5afq2+7yKEbsv+HfIllCNAPaQLGn/ZmhnL5RCQ5SJtK7ADNGAS+cYyBzBE0WZZANM9us3d9WbfS/zRIl6QqT2fv7a9iB0aJF+KtdjM/ICziiGbqKJ0DPTvklfWAPAehpGfJksU/VRJ3xpCXUSztd10p+aUKmb7lhxTAOoM4VvUKRmOA9hk/+kOQA2f/93agaB4TFE8J5f84eCAbOhXv3PMBrxjnApuyTdnqio/v/GlKEHJkKr5CcQVSuLVhuh6pJjD1OFnyxce6tuKJGDH0LMj6lYUs/9hTm15ztXN0T/iJFw0GV2/8su+1DKPQibnbeAPqSmmVxi2MoUnlHwXKnDEGGc5Jw20+pOKFoxYnJauqXhu7vi7MZhQWUR9mpf0IsDmkL0k1tN9Xt+IN6OG+KG7v7twkjwlE7Qx9ZrBiQzaBL+o8HtgGKewGyV8osvMZB6Bv/VOMzIAeft7rd/NvDcXmfYRerFG46vkf4VYgwpAYZVGHTvSuE7bkEnx8tCtD3oyc33rfavqSkfeHPoSeJl6rfPJ35Szgq8bf+lF/J1I+a77rbEbhHqtefypbFpmuj4xwlzNSF0Dh0NyD8X5hnpJj7a+JFalaYsx7a84W0jq/bD3+ZfQpcSkTQEMeo7R9XkfDVFRvhC9gdWP7HIkLZUowffga3wHdoEXIEiuKOQGWG4GRLWon5wlg6rUP6uCfGwWj//s9PfJ3Vy9QAT8vQTPfPMEp2x6/jsN0mdeovn8eH0vZb8QCOPEi97AArtvmd1PuEYiT3xUc3m861BpNqzbRoK/hRHy3j6eThPI0VRUL+GGxVKFK4Q39jv9i0N7DXUC68qesggZU//4BlQlEGQyXwjkELboemp5lHIAvbbMa5i9/9LpkJ/6XTHr/0umHf/0hyAuBvxRKgjoKMAShZlUgk9T1kOSqxkI40a6xM0Xe7efnVUNx9NaGNptAnN5GWH//3doAAAAAA==" alt="Logo Britannica" /></a></li>
+          <a href="#home" class="active"><img src="data:image/webp;base64,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" width="130px" alt="logo Britannica"></a>
         </div>
-        <div class="hamburger">
-          <li><a href="default.asp"><i class="fa-solid fa-bars" style="color: #ffffff;"></i> Browse</a></li>
-          <li><a href="news.asp"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> Search</a></li>
-          <li><a href="contact.asp">Dictionary</a></li>
-          <li><a href="about.asp">Quizzes</a></li>
-          <li><a href="about.asp">Money</a></li>
-        </div>
-        <div class="login">
-          <li><a href=""><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i> Login</a></li>
-        </div>
-        <div class="abonnement">
-          <li><a href="">Subscribe</a></li>
-        </div>
-      </ul>
+        <div class="topnav" id="myTopnav">
+          <a href="#news"><i class="fa-solid fa-bars"></i> Browse</a>
+          <a href="#contact"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> Search</a>
+          <a href="#dictionary">Dictionary</a>
+          <a href="#quizzes">Quizzes</a>
+          <a href="#money">Money</a>
+          <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa-solid fa-bars iconhamb"></i>
+          </a>
+          <a href="" class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div> 
+         <div class="login">
+           <a id="subscribe" href="#news">Subscribe</a>
+           <a id= login2 href="#news"><em id="login">Login </em><i class="iconlogin fa-solid fa-circle-user" style="color: #ffffff;"></i><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></a>
+         </div>
+      </section>
+      <section class="path">
+        <a href="">Home </a><em> > </em><a href="">Science</a><em> > </em><a href="">Mathematics</a>
+      </section>  
+      <script>
+        function hamburger() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          }
+      </script>
     </header>
     <main>
-
+      <section class="presentation">
+        <article class="title">
+          <h1>Tim Berners-Lee</h1>
+          <h3>British scientist</h3>
+          <div class="fonctions" id="fonctions">
+            <a href="#news"><i class="fa-solid fa-print" style="color: #0140ac;"></i> Print</a>
+            <a href="#contact"><i class="fa-solid fa-circle-check" style="color: #0140ac;"></i> Cite</a>
+            <a href="#dictionary"><i class="fa-solid fa-share-nodes" style="color: #0140ac;"></i> Share</a>
+            <a href="#quizzes"><i class="fa-solid fa-message" style="color: #0140ac;"></i> Feedback</a>
+            <a href="#money"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="actions()">
+              <i class="fa-solid fa-ellipsis-vertical"></i><em id="action2"> Actions</em>
+            </a>
+          </div> 
+          <h5>Also known as : Sir Tim Berners-Lee</h5>
+          <p>Written by <a href="">Michael Aaron Dennis</a></br>
+            Fact-checked by <a href="">The Editors of Encyclopaedia Britannica</a></br>
+            Last Updated: <a id="history" href="">Article History</a>
+          </p>
+        </article>
+        <article class="table-of-content">
+          <p><a href=""><i class="fa-solid fa-bars-staggered"></i> Table of Contents</a></p>
+          <p><a href=""><i class="fa-regular fa-circle-play" style="color: #5d6065;"></i>Listen to article <em class="timealoud"> 3 minutes</em> <i class="fa-brands fa-soundcloud" style="color: #4a4a4a;"></i></a></p>
+        </article>
+        <article class="resume">
+          <img src="./assets/British-scientist-Tim-Berners-Lee-f729e8ad.webp" alt="Tim Berners Lee" style="max-width: 300px;"></br>
+          <a href="" class="media">See all media</a></br>
+          <p>Category: Science & Tech</p>
+          <p>In Full: Sir Tim Berners-Lee</p>
+          <p>Born: June 8, 1955, London, England (age 68)</p>
+          <p>Founder: World Wide Web Consortium</p>
+          <p>Inventions: World Wide Web World Wide Web</p>
+          <a href="" class="related-content">See all related content →</a>
+          <p>Tim Berners-Lee, in full Sir Tim Berners-Lee, (born June 8, 1955, London, England), British computer scientist, generally credited as the inventor of the World Wide Web. In 2004 he was awarded a knighthood by Queen Elizabeth II of the United Kingdom and the inaugural Millennium Technology Prize (€1 million) by the Finnish Technology Award Foundation.</p>
+          <p>Computing came naturally to Berners-Lee, as both of his parents worked on the Ferranti Mark I, the first commercial computer. (See computer: The first stored-program machines.) After graduating in 1976 from the University of Oxford, Berners-Lee designed computer software for two years at Plessey Telecommunications Ltd., located in Poole, Dorset, England. Following this, he had several positions in the computer industry, including a stint from June to December 1980 as a software engineering consultant at CERN, the European particle physics laboratory in Geneva.</p>
+        </article>
+      </section>
+      <script>
+        function actions() {
+          var x = document.getElementById("fonctions");
+          if (x.className === "fonctions") {
+            x.className += " responsive2";
+          } else {
+            x.className = "fonctions";
+          }
+          }
+      </script>
     </main>
     <div id="app"></div>
     
